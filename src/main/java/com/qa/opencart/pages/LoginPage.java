@@ -17,7 +17,7 @@ public class LoginPage {
 	private By loginBtnLoc = By.cssSelector("input.btn.btn-primary");
 	private By forgotPwdLinkLoc = By.cssSelector("div.form-group a");
 	//aside[@id='column-right']//a[text()='Register'] 
-	private By registerLinkLoc = By.cssSelector("side#column-right a[href*='register']");
+	private By registerLinkLoc = By.cssSelector("aside#column-right a[href*='register']");
 	//2. Constructor of Login Page
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
