@@ -17,7 +17,7 @@ public class LoginPage {
 	private By loginBtnLoc = By.cssSelector("input.btn.btn-primary");
 	private By forgotPwdLinkLoc = By.cssSelector("div.form-group a");
 	//aside[@id='column-right']//a[text()='Register'] 
-	private By registerLinkLoc = By.cssSelector("aside#column-right a[href*='register']");
+	private By registerBtnLoc = By.linkText("Register");//By.cssSelector("aside#column-right a[href*='register']");
 	//2. Constructor of Login Page
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -51,7 +51,7 @@ public class LoginPage {
 	}
 	
 	public RegisterPage doRegister() {
-		elementUtil.doClick(registerLinkLoc);
+		elementUtil.doClick(registerBtnLoc);
 		return (new RegisterPage(driver));
 	}
 
